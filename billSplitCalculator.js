@@ -1,4 +1,4 @@
-const result = window.prompt('Please, type in your Total, tip% and party size','100 15 2').split(' ');
+const result = window.prompt('Please, type in your Total, Tips% and Party size','100 15 2').split(' ');
 
 const overall = Number(result[0]);
 const tip = Number(result[1]);
@@ -8,9 +8,9 @@ function tipOutput(tip){
     if (tip >=25){
         return " What a generous tip!";
     } else if (tip >=10 && tip <25){
-        return " Thank you, come again!";
+        return " Standard tip.";
     } else {
-        return " Thanks, I guess.";
+        return " Greeeeeat tip...";
     }
 }
 
